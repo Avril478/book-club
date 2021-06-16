@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>BPD</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="kwan380.css">
+</head>
+<body>
+    <!-- Links (sit on top) -->
+
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#menu" class="w3-button w3-block w3-black">BOOKLIST</a>
+      </div>
+      <div class="w3-col s3">    
+        <a href="javascript:void(0)" id=”trigger-modal” class="w3-button w3-block w3-black" onclick="showPop();">REGISTER</a>
+      </div>
+    </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Open from 9am to 5pm</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px">BPD<br></span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">430 queen street, 1010</span>
+    </div>
+</header>
+  
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+<!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <img src="BPD.jpg" alt="logo" class="logo">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="background-color: #231A24">ABOUT THE BPD</span></h5>
+      <p>Book Program Discussion (BPD) was founded in Auckland by Ben Wang in 430 queen street.</p>
+      <p>Book Program Discussion (BPD) lends books and professional
+        discussion notes to participating book groups. </p>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+        <p><i>"There is more treasure in books than in all the pirate’s loot on Treasure Island."
+          </i></p>
+        <p>Walt Disney</p>
+      </div>
+      <img src="https://static01.nyt.com/images/2017/05/11/t-magazine/bookstore-slide-2MCD/bookstore-slide-2MCD-superJumbo.jpg?quality=90&auto=webp" style="width:100%;max-width:1000px" class="w3-margin-top">
+      <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+      <p><strong>Address:</strong> 430 Queen street, CBD, AKL</p>
+    </div>
+  </div>
+  
+  <!-- Menu Container -->
+  <div class="w3-container" id="menu">
+    <div class="w3-content" style="max-width:700px">
+   
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BOOKLIST</span></h5>
+    
+      <div class="w3-row w3-center w3-card w3-padding">
+        <h5>BOOKLIST</h5>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+          <div class="w3-col s6 tablink" style="background-color:#231A24 ;">Available</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+          <div class="w3-col s6 tablink">On the way</div>
+        </a>
+      </div>
+  
+      <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Survive the Night</h5>
+        <p class="w3-text-grey">Riley Sager
+        </p><br>
+      
+        <h5>Razorblade Tears</h5>
+        <p class="w3-text-grey">S.A. Cosby</p><br>
+      
+        <h5>We Are the Brennans</h5>
+        <p class="w3-text-grey">Tracey Lange</p><br>
+      
+        <h5>The Reading List</h5>
+        <p class="w3-text-grey">Sara Nisha Adams</p><br>
+      
+        <h5>Paradise: One Town's Struggle to Survive an American Wildfire</h5>
+        <p class="w3-text-grey">Lizzie Johnson</p>
+      </div>
+  
+      <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <h5>House of Sticks</h5>
+        <p class="w3-text-grey">Ly Tran</p><br>
+      
+        <h5>Somebody’s Daughter</h5>
+        <p class="w3-text-grey">Ashley C. Ford</p><br>
+      
+        <h5>The Other Black Girl</h5>
+        <p class="w3-text-grey">Zakiya Dalila Harris</p><br>
+      
+        <h5>Malibu Rising</h5>
+        <p class="w3-text-grey">Taylor Jenkins Reid</p><br>
+      
+        <h5>The Maidens</h5>
+        <p class="w3-text-grey">Alex Michaelides
+        </p>
+      </div>  
+      <img src="https://static6.depositphotos.com/1167801/651/i/600/depositphotos_6517777-stock-photo-rainbow-of-colorful-boxes.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    </div>
+  </div>
+  
+  
+  
+  
+  <!-- End page content -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+  
+    
+  
+        
+       
+    
+    <div id="bookclubrego"  class="modal">
+
+        <div class="modal-content">
+
+        <form class="custom-color" action="/action_page.php" method="post">
+        
+
+            <div class="imgsection">
+                <span onclick="closePop();" class="close" >&times;</span>
+                <img src="BPD.jpg" alt="photo" class="aphoto">
+            </div>
+        <br>
+            <div id= "userDetails" class="inputform">
+                <h2>User Details</h2>
+                <div>
+                    <label>Given name</label>
+                    <input type="text"  placeholder="Enter Given name" required>
+                </div>
+                <div>
+                    <label>Surname</label>
+                    <input type="text"  placeholder="Enter Surname" required> 
+                </div>
+                <div>
+                    <label>Username</label>
+                    <input type="text"  placeholder="Enter Username" required>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password"  placeholder="Enter Password" required>
+                </div>
+            </div>
+            <div id="addresses" class="inputform">
+                
+                
+                <h2>Address</h2>
+                <div>
+                    <label>Home Address</label>
+                    <input type="text"  placeholder="Enter Home Address" required>
+                </div>
+                <div>
+                    <label>Work Address</label>
+                    <input type="text"  placeholder="Enter Work Address" required>
+                </div>
+            </div>
+            <div id="contacts" class="inputform">
+                <h2>Contacts</h2>
+                <div>
+                    <label>Mobile Number</label>
+                    <input type="text"  placeholder="Enter Mobile Number" required>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text"  placeholder="Enter Email" required>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+  
+<script src="kwan380.js"></script>
+</body>
+</html>

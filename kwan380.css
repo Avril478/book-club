@@ -1,0 +1,147 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+.custom-color { 
+  color: #231A24; /* Fallback color */
+  
+}
+
+.custom-background-color { 
+  background-color: #231A24;
+}
+.w3-text-white,
+.w3-top{
+  background-color:#231A24;
+  
+  
+}
+.w3-tag{
+  background-color:#231A24;
+}
+.w3-row w3-padding w3-black{
+  background-color:#231A24 ;
+}
+.w3-display-bottomright w3-center w3-padding-large{
+  background-color:#231A24 ;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ab98ad;
+  box-sizing: border-box;  /*make weight of all type area as same as form */
+  color: #faf6fa;
+  background-color: #231A24;
+}
+
+input[type=submit] {
+  background-color: #62b3ff;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.imgsection {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.aphoto {
+  width: 40%;
+  border-radius: 50%;
+}
+img.logo{
+  width: 30%;
+  border-radius: 50%;
+  text-align: center;
+  margin: 80px 240px;
+}
+input[type=submit]:hover { /* Add a hover effect for buttons */
+  opacity: 0.9;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #231A24; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffffff;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  position:relative;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animatetop;
+  animation-duration: 0.7s
+  
+}
+.inputform{
+  margin: 40px;
+}
+.submit{
+  margin-top: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+#bookclubrego{
+  display:none;
+}
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://miro.medium.com/max/10368/1*8L7RiWwRVtHIP35FFUbdog.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
